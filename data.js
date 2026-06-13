@@ -5213,7 +5213,7 @@ const WC_DATA = {
       }
     }
   ],
-  "last_updated": "2026-06-13 12:24 UTC",
+  "last_updated": "2026-06-13 12:40 UTC",
   "total_pot": 3150,
   "tournament_name": "FIFA World Cup 2026"
 };
