@@ -55,18 +55,27 @@
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
   }
+
+  .hero-inner {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 0 32px;
+    width: 100%;
+    max-width: 1200px;
+  }
+
   .beer-gif {
-    position: fixed;
-    top: 16px;
-    left: 16px;
-    width: 200px;
-    border-radius: 10px;
-    z-index: 200;
-    opacity: 0.9;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-    image-rendering: auto;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+    height: 170px;
+    width: auto;
+    border-radius: 12px;
+    opacity: 1;
+    box-shadow: 0 4px 28px rgba(0,0,0,0.7);
+    flex-shrink: 0;
+    display: block;
   }
 
   .hero-content {
@@ -693,15 +702,17 @@
 <body>
 
 <!-- HERO CANVAS -->
-<img src="_beer__dogs_GIF_by_Carlsberg.gif" class="beer-gif" alt="Carlsberg" loading="eager">
 <div class="hero">
   <canvas id="hero-canvas"></canvas>
-  <div class="hero-content">
-    <div class="hero-title">WC 2026 TOTO</div>
-    <div class="hero-subtitle">FIFA World Cup · USA · Canada · Mexico</div>
-    <div class="hero-badge">
-      <span class="pulse-dot"></span>
-      <span id="hero-status">Live · Group Stage</span>
+  <div class="hero-inner">
+    <img src="_beer__dogs_GIF_by_Carlsberg.gif" class="beer-gif" alt="Carlsberg" loading="eager">
+    <div class="hero-content">
+      <div class="hero-title">WC 2026 TOTO</div>
+      <div class="hero-subtitle">FIFA World Cup · USA · Canada · Mexico</div>
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        <span id="hero-status">Live · Group Stage</span>
+      </div>
     </div>
   </div>
 </div>
