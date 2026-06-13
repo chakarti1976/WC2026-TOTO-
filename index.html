@@ -45,7 +45,7 @@
     position: relative;
     width: 100%;
     height: 280px;
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,6 +76,12 @@
     box-shadow: 0 4px 28px rgba(0,0,0,0.7);
     flex-shrink: 0;
     display: block;
+    position: relative;
+    z-index: 20;
+    object-fit: contain;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
   }
 
   .hero-content {
@@ -705,7 +711,7 @@
 <div class="hero">
   <canvas id="hero-canvas"></canvas>
   <div class="hero-inner">
-    <img src="%23beer%20%23dogs%20GIF%20by%20Carlsberg.gif" class="beer-gif" alt="Carlsberg" loading="eager">
+    <img src="./carlsberg.gif" class="beer-gif" alt="Carlsberg" loading="eager">
     <div class="hero-content">
       <div class="hero-title">WC 2026 TOTO</div>
       <div class="hero-subtitle">FIFA World Cup · USA · Canada · Mexico</div>
