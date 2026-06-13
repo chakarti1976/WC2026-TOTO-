@@ -59,11 +59,14 @@
     position: fixed;
     top: 16px;
     left: 16px;
-    width: 120px;
+    width: 200px;
     border-radius: 10px;
     z-index: 200;
     opacity: 0.9;
     box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    image-rendering: auto;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
   }
 
   .hero-content {
@@ -690,7 +693,7 @@
 <body>
 
 <!-- HERO CANVAS -->
-  <img src="_beer__dogs_GIF_by_Carlsberg.gif" class="beer-gif" alt="Carlsberg">
+<img src="_beer__dogs_GIF_by_Carlsberg.gif" class="beer-gif" alt="Carlsberg" loading="eager">
 <div class="hero">
   <canvas id="hero-canvas"></canvas>
   <div class="hero-content">
