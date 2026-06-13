@@ -10,6 +10,21 @@ import sys
 
 EXCEL_FILE = 'WC_2026_Toto__Participants_list.xlsx'
 
+ALL_GROUPS = {
+    'A': ['Mexico','South Korea','Czechia','South Africa'],
+    'B': ['Canada','Bosnia & Herzegovina','Qatar','Switzerland'],
+    'C': ['Brazil','Morocco','Haiti','Scotland'],
+    'D': ['United States','Australia','Türkiye','Paraguay'],
+    'E': ['Germany','Curaçao','Ivory Coast','Ecuador'],
+    'F': ['Netherlands','Japan','Sweden','Tunisia'],
+    'G': ['Belgium','Egypt','Iran','New Zealand'],
+    'H': ['Spain','Cape Verde','Saudi Arabia','Uruguay'],
+    'I': ['France','Senegal','Iraq','Norway'],
+    'J': ['Argentina','Algeria','Austria','Jordan'],
+    'K': ['Portugal','DR Congo','Uzbekistan','Colombia'],
+    'L': ['England','Croatia','Ghana','Panama'],
+}
+
 def clean_float(val, default=0):
     try:
         if pd.isna(val): return default
@@ -41,51 +56,54 @@ def extract_matches(df):
             })
     return matches
 
-def extract_group_standings(df):
-    all_teams = {
-        'A': ['Mexico','South Korea','Czechia','South Africa'],
-        'B': ['Canada','Bosnia & Herzegovina','Qatar','Switzerland'],
-        'C': ['Brazil','Morocco','Haiti','Scotland'],
-        'D': ['United States','Australia','Türkiye','Paraguay'],
-        'E': ['Germany','Curaçao','Ivory Coast','Ecuador'],
-        'F': ['Netherlands','Japan','Sweden','Tunisia'],
-        'G': ['Belgium','Egypt','Iran','New Zealand'],
-        'H': ['Spain','Cape Verde','Saudi Arabia','Uruguay'],
-        'I': ['France','Senegal','Iraq','Norway'],
-        'J': ['Argentina','Algeria','Austria','Jordan'],
-        'K': ['Portugal','DR Congo','Uzbekistan','Colombia'],
-        'L': ['England','Croatia','Ghana','Panama'],
-    }
-    team_to_group = {t: g for g, teams in all_teams.items() for t in teams}
-    
-    groups = {g: {} for g in all_teams}
-    
-    for idx, row in df.iterrows():
-        team = row[10]
-        if pd.notna(team) and str(team).strip() in team_to_group:
-            t = str(team).strip()
-            g = team_to_group[t]
-            groups[g][t] = {
-                'team': t,
-                'pl': int(clean_float(row[11])),
-                'w': int(clean_float(row[12])),
-                'd': int(clean_float(row[13])),
-                'l': int(clean_float(row[14])),
-                'gd': str(row[15]).strip() if pd.notna(row[15]) else '0 - 0',
-                'pts': int(clean_float(row[16]))
-            }
-    
+def compute_group_standings(matches):
+    """Compute group standings from match results."""
+    team_to_group = {t: g for g, teams in ALL_GROUPS.items() for t in teams}
+
+    # Initialize stats for every team
+    stats = {}
+    for group, teams in ALL_GROUPS.items():
+        for t in teams:
+            stats[t] = {'team': t, 'group': group, 'pl': 0, 'w': 0, 'd': 0, 'l': 0, 'gf': 0, 'ga': 0, 'pts': 0}
+
+    for m in matches:
+        if not m['played']:
+            continue
+        t1, t2 = m['team1'], m['team2']
+        s1, s2 = int(m['score1']), int(m['score2'])
+        for t in [t1, t2]:
+            if t not in stats:
+                continue
+        stats[t1]['pl'] += 1
+        stats[t2]['pl'] += 1
+        stats[t1]['gf'] += s1
+        stats[t1]['ga'] += s2
+        stats[t2]['gf'] += s2
+        stats[t2]['ga'] += s1
+        if s1 > s2:
+            stats[t1]['w'] += 1; stats[t1]['pts'] += 3
+            stats[t2]['l'] += 1
+        elif s2 > s1:
+            stats[t2]['w'] += 1; stats[t2]['pts'] += 3
+            stats[t1]['l'] += 1
+        else:
+            stats[t1]['d'] += 1; stats[t1]['pts'] += 1
+            stats[t2]['d'] += 1; stats[t2]['pts'] += 1
+
     result = {}
-    for g, team_dict in groups.items():
-        teams = list(team_dict.values())
-        if len(teams) < 4:
-            existing = {t['team'] for t in teams}
-            for t in all_teams[g]:
-                if t not in existing:
-                    teams.append({'team': t, 'pl': 0, 'w': 0, 'd': 0, 'l': 0, 'gd': '0 - 0', 'pts': 0})
-        teams.sort(key=lambda x: (-x['pts'], -x['w']))
-        result[g] = teams
-    
+    for group, teams in ALL_GROUPS.items():
+        group_teams = [stats[t] for t in teams]
+        group_teams.sort(key=lambda x: (-x['pts'], -(x['gf'] - x['ga']), -x['gf']))
+        result[group] = [{
+            'team': s['team'],
+            'pl': s['pl'],
+            'w': s['w'],
+            'd': s['d'],
+            'l': s['l'],
+            'gd': f"{s['gf']} - {s['ga']}",
+            'pts': s['pts']
+        } for s in group_teams]
+
     return result
 
 def extract_results(df_res):
@@ -153,34 +171,36 @@ def main():
     if not os.path.exists(EXCEL_FILE):
         print(f"ERROR: {EXCEL_FILE} not found. Place it in the same directory as this script.")
         sys.exit(1)
-    
+
     print(f"Reading {EXCEL_FILE}...")
-    
+
     df_main = pd.read_excel(EXCEL_FILE, sheet_name='FIFA WC 2026', header=None)
     df_res = pd.read_excel(EXCEL_FILE, sheet_name='Results', header=None)
     df_toto = pd.read_excel(EXCEL_FILE, sheet_name=' Toto teams', header=None)
-    df_rules = pd.read_excel(EXCEL_FILE, sheet_name='Rules EN', header=None)
-    
+
+    matches = extract_matches(df_main)
+    groups = compute_group_standings(matches)
+
     data = {
-        'matches': extract_matches(df_main),
-        'groups': extract_group_standings(df_main),
+        'matches': matches,
+        'groups': groups,
         'results': extract_results(df_res),
         'toto': extract_toto_teams(df_toto),
         'last_updated': pd.Timestamp.now().strftime('%Y-%m-%d %H:%M UTC'),
         'total_pot': 3150,
         'tournament_name': 'FIFA World Cup 2026'
     }
-    
-    print(f"  Matches: {len(data['matches'])}")
+
+    print(f"  Matches: {len(data['matches'])} ({sum(1 for m in matches if m['played'])} played)")
     print(f"  Groups: {len(data['groups'])}")
     print(f"  Results: {len(data['results'])}")
     print(f"  Toto entries: {len(data['toto'])}")
-    
+
     js_content = f"// Auto-generated by extract_data.py — do not edit manually\nconst WC_DATA = {json.dumps(data, ensure_ascii=False, indent=2)};\n"
-    
+
     with open('data.js', 'w', encoding='utf-8') as f:
         f.write(js_content)
-    
+
     print("✓ Generated data.js successfully")
 
 if __name__ == '__main__':

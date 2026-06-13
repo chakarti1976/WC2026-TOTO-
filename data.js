@@ -870,59 +870,59 @@ const WC_DATA = {
     "A": [
       {
         "team": "Mexico",
-        "pl": 0,
-        "w": 0,
+        "pl": 1,
+        "w": 1,
         "d": 0,
         "l": 0,
-        "gd": "0 - 0",
-        "pts": 0
+        "gd": "2 - 0",
+        "pts": 3
       },
       {
         "team": "South Korea",
-        "pl": 0,
-        "w": 0,
+        "pl": 1,
+        "w": 1,
         "d": 0,
         "l": 0,
-        "gd": "0 - 0",
-        "pts": 0
+        "gd": "2 - 1",
+        "pts": 3
       },
       {
         "team": "Czechia",
-        "pl": 0,
+        "pl": 1,
         "w": 0,
         "d": 0,
-        "l": 0,
-        "gd": "0 - 0",
+        "l": 1,
+        "gd": "1 - 2",
         "pts": 0
       },
       {
         "team": "South Africa",
-        "pl": 0,
+        "pl": 1,
         "w": 0,
         "d": 0,
-        "l": 0,
-        "gd": "0 - 0",
+        "l": 1,
+        "gd": "0 - 2",
         "pts": 0
       }
     ],
     "B": [
       {
         "team": "Canada",
-        "pl": 0,
+        "pl": 1,
         "w": 0,
-        "d": 0,
+        "d": 1,
         "l": 0,
-        "gd": "0 - 0",
-        "pts": 0
+        "gd": "1 - 1",
+        "pts": 1
       },
       {
         "team": "Bosnia & Herzegovina",
-        "pl": 0,
+        "pl": 1,
         "w": 0,
-        "d": 0,
+        "d": 1,
         "l": 0,
-        "gd": "0 - 0",
-        "pts": 0
+        "gd": "1 - 1",
+        "pts": 1
       },
       {
         "team": "Qatar",
@@ -945,22 +945,13 @@ const WC_DATA = {
     ],
     "C": [
       {
-        "team": "Brazil",
-        "pl": 0,
-        "w": 0,
-        "d": 0,
-        "l": 0,
-        "gd": "0 - 0",
-        "pts": 0
-      },
-      {
         "team": "Morocco",
-        "pl": 0,
-        "w": 0,
+        "pl": 1,
+        "w": 1,
         "d": 0,
         "l": 0,
-        "gd": "0 - 0",
-        "pts": 0
+        "gd": "2 - 0",
+        "pts": 3
       },
       {
         "team": "Haiti",
@@ -979,17 +970,26 @@ const WC_DATA = {
         "l": 0,
         "gd": "0 - 0",
         "pts": 0
+      },
+      {
+        "team": "Brazil",
+        "pl": 1,
+        "w": 0,
+        "d": 0,
+        "l": 1,
+        "gd": "0 - 2",
+        "pts": 0
       }
     ],
     "D": [
       {
         "team": "United States",
-        "pl": 0,
-        "w": 0,
+        "pl": 1,
+        "w": 1,
         "d": 0,
         "l": 0,
-        "gd": "0 - 0",
-        "pts": 0
+        "gd": "4 - 1",
+        "pts": 3
       },
       {
         "team": "Australia",
@@ -1011,11 +1011,11 @@ const WC_DATA = {
       },
       {
         "team": "Paraguay",
-        "pl": 0,
+        "pl": 1,
         "w": 0,
         "d": 0,
-        "l": 0,
-        "gd": "0 - 0",
+        "l": 1,
+        "gd": "1 - 4",
         "pts": 0
       }
     ],
@@ -2692,7 +2692,7 @@ const WC_DATA = {
       "rank": 0
     }
   ],
-  "last_updated": "2026-06-13 12:16 UTC",
+  "last_updated": "2026-06-13 12:28 UTC",
   "total_pot": 3150,
   "tournament_name": "FIFA World Cup 2026"
 };
