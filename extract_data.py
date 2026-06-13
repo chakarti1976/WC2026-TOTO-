@@ -8,7 +8,7 @@ import json
 import os
 import sys
 
-EXCEL_FILE = 'WC_2026_Toto__Participants_list.xlsx'
+EXCEL_FILE = 'WC 2026 Toto - Participants list.xlsx'
 
 def clean_float(val, default=0):
     try:
