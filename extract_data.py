@@ -8,7 +8,7 @@ import json
 import os
 import sys
 
-EXCEL_FILE = 'WC 2026 Toto - Participants list.xlsx'
+EXCEL_FILE = 'WC_2026_Toto__Participants_list.xlsx'
 
 def clean_float(val, default=0):
     try:
@@ -166,7 +166,7 @@ def main():
         'groups': extract_group_standings(df_main),
         'results': extract_results(df_res),
         'toto': extract_toto_teams(df_toto),
-        'last_updated': pd.Timestamp.now().strftime('%Y-%m-%d %H:%M UTC'),
+        'last_updated': (pd.Timestamp.now() + pd.Timedelta(hours=2)).strftime('%Y-%m-%d %H:%M'),
         'total_pot': 3150,
         'tournament_name': 'FIFA World Cup 2026'
     }

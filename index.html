@@ -766,6 +766,8 @@
             <tr>
               <th>#</th>
               <th>Participant</th>
+              <th>PRIZE €</th>
+              <th>TOTAL</th>
               <th title="Group Stage">GRP</th>
               <th title="Round of 32">R32</th>
               <th title="Round of 16">R16</th>
@@ -774,8 +776,6 @@
               <th title="Final">FIN</th>
               <th title="3rd Place">3RD</th>
               <th title="Champion">CH</th>
-              <th>TOTAL</th>
-              <th>PRIZE €</th>
             </tr>
           </thead>
           <tbody id="leaderboard-body"></tbody>
@@ -1062,7 +1062,7 @@ function flagEmoji(team) {
 
 function renderLeaderboard(data) {
   document.getElementById('last-updated-lb').innerHTML =
-    `<span class="pulse-dot" style="width:5px;height:5px;"></span> Updated: ${data.last_updated}`;
+    `<span class="pulse-dot" style="width:5px;height:5px;"></span> Updated: ${data.last_updated} CET`;
   document.getElementById('footer-updated').textContent = data.last_updated;
 
   const tbody = document.getElementById('leaderboard-body');
@@ -1072,7 +1072,9 @@ function renderLeaderboard(data) {
     const prizeClass = p.prize > 0 ? 'prize-val' : '';
     return `<tr>
       <td><span class="rank-badge ${rankClass}">${p.rank}</span></td>
-      <td>${p.name}</td>
+      <td style="white-space:nowrap;">${p.name}</td>
+      <td class="${prizeClass}">${prizeStr}</td>
+      <td class="total-pts">${p.total}</td>
       <td>${p.group || '—'}</td>
       <td>${p.r32 || '—'}</td>
       <td>${p.r16 || '—'}</td>
@@ -1081,8 +1083,6 @@ function renderLeaderboard(data) {
       <td>${p.final_pts || '—'}</td>
       <td>${p.third || '—'}</td>
       <td>${p.champ || '—'}</td>
-      <td class="total-pts">${p.total}</td>
-      <td class="${prizeClass}">${prizeStr}</td>
     </tr>`;
   }).join('');
 }
@@ -1095,37 +1095,59 @@ function filterLeaderboard(q) {
   });
 }
 
+function parseMatchDateTime(m) {
+  // Combine date + time into sortable value
+  const months = {Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11};
+  try {
+    const parts = m.date.replace(',','').split(' '); // e.g. "Jun 11 2026"
+    const [mon, day, yr] = parts;
+    const [hr, min] = m.time.split(':');
+    return new Date(yr, months[mon], parseInt(day), parseInt(hr), parseInt(min));
+  } catch(e) { return new Date(0); }
+}
+
+function buildMatchCard(m) {
+  const scoreHtml = m.played
+    ? `<div class="match-score"><span class="played-indicator"></span>${m.score1} – ${m.score2}</div>`
+    : `<div class="match-score upcoming">${m.time} CET</div>`;
+  return `<div class="match-card" data-group="${m.group}" data-match="${m.match}">
+    <div class="match-header">
+      <span class="match-num">Match ${m.match}</span>
+      <span>${m.day} ${m.date}</span>
+      <span class="group-badge">Group ${m.group}</span>
+    </div>
+    <div class="match-body">
+      <div class="match-team home">${flagEmoji(m.team1)} ${m.team1}</div>
+      ${scoreHtml}
+      <div class="match-team away">${flagEmoji(m.team2)} ${m.team2}</div>
+    </div>
+  </div>`;
+}
+
 function renderMatches(data) {
   const groups = [...new Set(data.matches.map(m => m.group))].sort();
   const filterDiv = document.getElementById('group-filters');
   filterDiv.innerHTML = `<button class="filter-btn active" onclick="filterMatchGroup('ALL', this)">All</button>` +
     groups.map(g => `<button class="filter-btn" onclick="filterMatchGroup('${g}', this)">Group ${g}</button>`).join('');
 
-  document.getElementById('matches-grid').innerHTML = data.matches.map(m => {
-    const scoreHtml = m.played
-      ? `<div class="match-score"><span class="played-indicator"></span>${m.score1} – ${m.score2}</div>`
-      : `<div class="match-score upcoming">${m.time} GMT+2</div>`;
-    return `<div class="match-card" data-group="${m.group}">
-      <div class="match-header">
-        <span class="match-num">Match ${m.match}</span>
-        <span>${m.day} ${m.date}</span>
-        <span class="group-badge">Group ${m.group}</span>
-      </div>
-      <div class="match-body">
-        <div class="match-team home">${flagEmoji(m.team1)} ${m.team1}</div>
-        ${scoreHtml}
-        <div class="match-team away">${flagEmoji(m.team2)} ${m.team2}</div>
-      </div>
-    </div>`;
-  }).join('');
+  // Sort by date+time for ALL view
+  const sorted = [...data.matches].sort((a, b) => parseMatchDateTime(a) - parseMatchDateTime(b));
+  document.getElementById('matches-grid').innerHTML = sorted.map(m => buildMatchCard(m)).join('');
 }
 
 function filterMatchGroup(g, btn) {
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
-  document.querySelectorAll('.match-card').forEach(c => {
-    c.style.display = (g === 'ALL' || c.dataset.group === g) ? '' : 'none';
-  });
+  const grid = document.getElementById('matches-grid');
+  if (g === 'ALL') {
+    // Re-sort by time
+    const sorted = [...WC_DATA.matches].sort((a, b) => parseMatchDateTime(a) - parseMatchDateTime(b));
+    grid.innerHTML = sorted.map(m => buildMatchCard(m)).join('');
+  } else {
+    // Filter by group, keep original match order within group
+    const filtered = WC_DATA.matches.filter(m => m.group === g);
+    grid.innerHTML = filtered.map(m => buildMatchCard(m)).join('');
+  }
 }
 
 function renderGroups(data) {
