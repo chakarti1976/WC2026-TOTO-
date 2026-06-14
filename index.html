@@ -248,7 +248,7 @@
   }
 
   .leaderboard-table td:first-child { text-align: center; width: 50px; }
-  .leaderboard-table td:nth-child(2) { text-align: left; font-family: 'Inter', sans-serif; }
+  .leaderboard-table td:nth-child(2) { text-align: left; font-family: 'Inter', sans-serif; max-width: 120px; width: 120px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
   .leaderboard-table tr:hover td { background: rgba(255,255,255,0.03); }
 
@@ -1072,7 +1072,7 @@ function renderLeaderboard(data) {
     const prizeClass = p.prize > 0 ? 'prize-val' : '';
     return `<tr>
       <td><span class="rank-badge ${rankClass}">${p.rank}</span></td>
-      <td style="white-space:nowrap;">${p.name}</td>
+      <td title="${p.name}">${p.name}</td>
       <td class="${prizeClass}">${prizeStr}</td>
       <td class="total-pts">${p.total}</td>
       <td>${p.group || '—'}</td>
