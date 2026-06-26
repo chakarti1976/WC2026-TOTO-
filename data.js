@@ -271,11 +271,11 @@ const WC_DATA = {
       "date": "Jun 26, 2026",
       "time": "4:00",
       "team1": "Türkiye",
-      "score1": "",
-      "score2": "",
+      "score1": "3",
+      "score2": "2",
       "team2": "United States",
       "group": "D",
-      "played": false
+      "played": true
     },
     {
       "match": 24,
@@ -283,11 +283,11 @@ const WC_DATA = {
       "date": "Jun 26, 2026",
       "time": "4:00",
       "team1": "Paraguay",
-      "score1": "",
-      "score2": "",
+      "score1": "0",
+      "score2": "0",
       "team2": "Australia",
       "group": "D",
-      "played": false
+      "played": true
     },
     {
       "match": 25,
@@ -343,11 +343,11 @@ const WC_DATA = {
       "date": "Jun 25, 2026",
       "time": "22:00",
       "team1": "Ecuador",
-      "score1": "",
-      "score2": "",
+      "score1": "2",
+      "score2": "1",
       "team2": "Germany",
       "group": "E",
-      "played": false
+      "played": true
     },
     {
       "match": 30,
@@ -355,11 +355,11 @@ const WC_DATA = {
       "date": "Jun 25, 2026",
       "time": "22:00",
       "team1": "Curaçao",
-      "score1": "",
-      "score2": "",
+      "score1": "0",
+      "score2": "2",
       "team2": "Ivory Coast",
       "group": "E",
-      "played": false
+      "played": true
     },
     {
       "match": 31,
@@ -415,11 +415,11 @@ const WC_DATA = {
       "date": "Jun 26, 2026",
       "time": "1:00",
       "team1": "Tunisia",
-      "score1": "",
-      "score2": "",
+      "score1": "1",
+      "score2": "3",
       "team2": "Netherlands",
       "group": "F",
-      "played": false
+      "played": true
     },
     {
       "match": 36,
@@ -427,11 +427,11 @@ const WC_DATA = {
       "date": "Jun 26, 2026",
       "time": "1:00",
       "team1": "Japan",
-      "score1": "",
-      "score2": "",
+      "score1": "1",
+      "score2": "1",
       "team2": "Sweden",
       "group": "F",
-      "played": false
+      "played": true
     },
     {
       "match": 37,
@@ -984,114 +984,114 @@ const WC_DATA = {
     "D": [
       {
         "team": "United States",
-        "pl": 2,
+        "pl": 3,
         "w": 2,
         "d": 0,
-        "l": 0,
-        "gd": "6 - 1",
+        "l": 1,
+        "gd": "8 - 4",
         "pts": 6
       },
       {
         "team": "Australia",
-        "pl": 2,
+        "pl": 3,
         "w": 1,
-        "d": 0,
+        "d": 1,
         "l": 1,
         "gd": "2 - 2",
-        "pts": 3
+        "pts": 4
       },
       {
         "team": "Paraguay",
-        "pl": 2,
+        "pl": 3,
         "w": 1,
-        "d": 0,
+        "d": 1,
         "l": 1,
         "gd": "2 - 4",
-        "pts": 3
+        "pts": 4
       },
       {
         "team": "Türkiye",
-        "pl": 2,
-        "w": 0,
+        "pl": 3,
+        "w": 1,
         "d": 0,
         "l": 2,
-        "gd": "0 - 3",
-        "pts": 0
+        "gd": "3 - 5",
+        "pts": 3
       }
     ],
     "E": [
       {
         "team": "Germany",
-        "pl": 2,
+        "pl": 3,
         "w": 2,
         "d": 0,
-        "l": 0,
-        "gd": "9 - 2",
+        "l": 1,
+        "gd": "10 - 4",
         "pts": 6
       },
       {
         "team": "Ivory Coast",
-        "pl": 2,
-        "w": 1,
+        "pl": 3,
+        "w": 2,
         "d": 0,
         "l": 1,
-        "gd": "2 - 2",
-        "pts": 3
+        "gd": "4 - 2",
+        "pts": 6
       },
       {
         "team": "Ecuador",
-        "pl": 2,
-        "w": 0,
+        "pl": 3,
+        "w": 1,
         "d": 1,
         "l": 1,
-        "gd": "0 - 1",
-        "pts": 1
+        "gd": "2 - 2",
+        "pts": 4
       },
       {
         "team": "Curaçao",
-        "pl": 2,
+        "pl": 3,
         "w": 0,
         "d": 1,
-        "l": 1,
-        "gd": "1 - 7",
+        "l": 2,
+        "gd": "1 - 9",
         "pts": 1
       }
     ],
     "F": [
       {
         "team": "Netherlands",
-        "pl": 2,
-        "w": 1,
+        "pl": 3,
+        "w": 2,
         "d": 1,
         "l": 0,
-        "gd": "7 - 3",
-        "pts": 4
+        "gd": "10 - 4",
+        "pts": 7
       },
       {
         "team": "Japan",
-        "pl": 2,
+        "pl": 3,
         "w": 1,
-        "d": 1,
+        "d": 2,
         "l": 0,
-        "gd": "6 - 2",
-        "pts": 4
+        "gd": "7 - 3",
+        "pts": 5
       },
       {
         "team": "Sweden",
-        "pl": 2,
+        "pl": 3,
         "w": 1,
-        "d": 0,
+        "d": 1,
         "l": 1,
-        "gd": "6 - 6",
-        "pts": 3
+        "gd": "7 - 7",
+        "pts": 4
       },
       {
         "team": "Tunisia",
-        "pl": 2,
+        "pl": 3,
         "w": 0,
         "d": 0,
-        "l": 2,
-        "gd": "1 - 9",
+        "l": 3,
+        "gd": "2 - 12",
         "pts": 0
       }
     ],
@@ -1327,6 +1327,20 @@ const WC_DATA = {
   "results": [
     {
       "rank": 1,
+      "name": "Susie Wolke",
+      "group": 115.0,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 115.0,
+      "prize": 1575.0
+    },
+    {
+      "rank": 2,
       "name": "Simas Baubonis",
       "group": 112.5,
       "r32": 0.0,
@@ -1337,12 +1351,12 @@ const WC_DATA = {
       "third": 0.0,
       "champ": 0.0,
       "total": 112.5,
-      "prize": 1575.0
+      "prize": 630.0
     },
     {
-      "rank": 2,
+      "rank": 3,
       "name": "Titas Jodenis",
-      "group": 108.5,
+      "group": 109.0,
       "r32": 0.0,
       "r16": 0.0,
       "qf": 0.0,
@@ -1350,11 +1364,11 @@ const WC_DATA = {
       "final_pts": 0.0,
       "third": 0.0,
       "champ": 0.0,
-      "total": 108.5,
-      "prize": 472.5
+      "total": 109.0,
+      "prize": 315.0
     },
     {
-      "rank": 2,
+      "rank": 4,
       "name": "Donatas Celesius",
       "group": 108.5,
       "r32": 0.0,
@@ -1365,10 +1379,10 @@ const WC_DATA = {
       "third": 0.0,
       "champ": 0.0,
       "total": 108.5,
-      "prize": 472.5
+      "prize": 157.5
     },
     {
-      "rank": 4,
+      "rank": 5,
       "name": "Zaur Yusubov",
       "group": 108.0,
       "r32": 0.0,
@@ -1382,7 +1396,7 @@ const WC_DATA = {
       "prize": 157.5
     },
     {
-      "rank": 5,
+      "rank": 6,
       "name": "Arūnas Čižauskas",
       "group": 106.5,
       "r32": 0.0,
@@ -1393,10 +1407,10 @@ const WC_DATA = {
       "third": 0.0,
       "champ": 0.0,
       "total": 106.5,
-      "prize": 157.5
+      "prize": 78.75
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "Algirdas Čižauskas",
       "group": 104.5,
       "r32": 0.0,
@@ -1411,6 +1425,62 @@ const WC_DATA = {
     },
     {
       "rank": 7,
+      "name": "Nadia Mercurio",
+      "group": 104.5,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 104.5,
+      "prize": 78.75
+    },
+    {
+      "rank": 9,
+      "name": "Sigitas Petraitis",
+      "group": 103.5,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 103.5,
+      "prize": 78.75
+    },
+    {
+      "rank": 10,
+      "name": "Virginija Čižauskienė",
+      "group": 103.0,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 103.0,
+      "prize": 0.0
+    },
+    {
+      "rank": 10,
+      "name": "Sergey Zhaltuchin",
+      "group": 103.0,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 103.0,
+      "prize": 0.0
+    },
+    {
+      "rank": 10,
       "name": "Davide Speranza",
       "group": 103.0,
       "r32": 0.0,
@@ -1421,11 +1491,11 @@ const WC_DATA = {
       "third": 0.0,
       "champ": 0.0,
       "total": 103.0,
-      "prize": 78.75
+      "prize": 0.0
     },
     {
-      "rank": 8,
-      "name": "Sigitas Petraitis",
+      "rank": 13,
+      "name": "Pijus Jalo",
       "group": 102.5,
       "r32": 0.0,
       "r16": 0.0,
@@ -1435,24 +1505,10 @@ const WC_DATA = {
       "third": 0.0,
       "champ": 0.0,
       "total": 102.5,
-      "prize": 78.75
+      "prize": 0.0
     },
     {
-      "rank": 9,
-      "name": "Sergey Zhaltuchin",
-      "group": 102.0,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 102.0,
-      "prize": 39.38
-    },
-    {
-      "rank": 9,
+      "rank": 14,
       "name": "Artem Lavrov",
       "group": 102.0,
       "r32": 0.0,
@@ -1463,24 +1519,10 @@ const WC_DATA = {
       "third": 0.0,
       "champ": 0.0,
       "total": 102.0,
-      "prize": 39.38
-    },
-    {
-      "rank": 11,
-      "name": "Nadia Mercurio",
-      "group": 101.5,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 101.5,
       "prize": 0.0
     },
     {
-      "rank": 12,
+      "rank": 15,
       "name": "Dainius Breivė",
       "group": 101.0,
       "r32": 0.0,
@@ -1494,7 +1536,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 12,
+      "rank": 15,
       "name": "Vaidas Pažusys",
       "group": 101.0,
       "r32": 0.0,
@@ -1508,7 +1550,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 14,
+      "rank": 17,
       "name": "Andrea Signorini",
       "group": 99.5,
       "r32": 0.0,
@@ -1522,8 +1564,8 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 14,
-      "name": "Pijus Jalo",
+      "rank": 17,
+      "name": "Rolandas Urbelis",
       "group": 99.5,
       "r32": 0.0,
       "r16": 0.0,
@@ -1536,7 +1578,35 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 16,
+      "rank": 19,
+      "name": "Egidijus Mačiukas",
+      "group": 99.0,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 99.0,
+      "prize": 0.0
+    },
+    {
+      "rank": 19,
+      "name": "Gianmarco Monti",
+      "group": 99.0,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 99.0,
+      "prize": 0.0
+    },
+    {
+      "rank": 19,
       "name": "Deividas Jančius",
       "group": 99.0,
       "r32": 0.0,
@@ -1550,8 +1620,8 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 17,
-      "name": "Rolandas Urbelis",
+      "rank": 22,
+      "name": "Mindaugas Sipavičius",
       "group": 98.5,
       "r32": 0.0,
       "r16": 0.0,
@@ -1564,7 +1634,21 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 18,
+      "rank": 22,
+      "name": "Audi club",
+      "group": 98.5,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 98.5,
+      "prize": 0.0
+    },
+    {
+      "rank": 24,
       "name": "Martynas Bruzga",
       "group": 98.0,
       "r32": 0.0,
@@ -1578,22 +1662,8 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 18,
-      "name": "Gianmarco Monti",
-      "group": 98.0,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 98.0,
-      "prize": 0.0
-    },
-    {
-      "rank": 20,
-      "name": "Virginija Čižauskienė",
+      "rank": 25,
+      "name": "Kristina I",
       "group": 97.0,
       "r32": 0.0,
       "r16": 0.0,
@@ -1606,7 +1676,35 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 20,
+      "rank": 25,
+      "name": "Ivan Manev",
+      "group": 97.0,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 97.0,
+      "prize": 0.0
+    },
+    {
+      "rank": 25,
+      "name": "Rustam Roikov",
+      "group": 97.0,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 97.0,
+      "prize": 0.0
+    },
+    {
+      "rank": 25,
       "name": "Aurimas Šumbrauskis",
       "group": 97.0,
       "r32": 0.0,
@@ -1620,8 +1718,50 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 22,
-      "name": "Susie Wolke",
+      "rank": 25,
+      "name": "Donatas Keras",
+      "group": 97.0,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 97.0,
+      "prize": 0.0
+    },
+    {
+      "rank": 25,
+      "name": "Donatas Bakėjus",
+      "group": 97.0,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 97.0,
+      "prize": 0.0
+    },
+    {
+      "rank": 25,
+      "name": "Paolo Papiri",
+      "group": 97.0,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 97.0,
+      "prize": 0.0
+    },
+    {
+      "rank": 32,
+      "name": "Eugenijus Petrošius",
       "group": 96.0,
       "r32": 0.0,
       "r16": 0.0,
@@ -1634,7 +1774,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 22,
+      "rank": 32,
       "name": "Juozas Žimkus Jr",
       "group": 96.0,
       "r32": 0.0,
@@ -1648,8 +1788,8 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 22,
-      "name": "Ivan Manev",
+      "rank": 32,
+      "name": "Simonas Anikinas",
       "group": 96.0,
       "r32": 0.0,
       "r16": 0.0,
@@ -1662,21 +1802,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 22,
-      "name": "Donatas Bakėjus",
-      "group": 96.0,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 96.0,
-      "prize": 0.0
-    },
-    {
-      "rank": 22,
+      "rank": 32,
       "name": "Gintas Bungarda 2",
       "group": 96.0,
       "r32": 0.0,
@@ -1690,21 +1816,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 27,
-      "name": "Audi club",
-      "group": 95.5,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 95.5,
-      "prize": 0.0
-    },
-    {
-      "rank": 28,
+      "rank": 36,
       "name": "Donatas Pocius",
       "group": 95.0,
       "r32": 0.0,
@@ -1718,7 +1830,21 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 28,
+      "rank": 36,
+      "name": "Gedas Girdžiūnas",
+      "group": 95.0,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 95.0,
+      "prize": 0.0
+    },
+    {
+      "rank": 36,
       "name": "Enrico Ancarola, Pietro Rivera, Riccardo Gatti",
       "group": 95.0,
       "r32": 0.0,
@@ -1732,7 +1858,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 28,
+      "rank": 36,
       "name": "Aurimas Oleknavičius",
       "group": 95.0,
       "r32": 0.0,
@@ -1746,7 +1872,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 28,
+      "rank": 36,
       "name": "Ernesta Čebienė",
       "group": 95.0,
       "r32": 0.0,
@@ -1760,21 +1886,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 32,
-      "name": "Eugenijus Petrošius",
-      "group": 94.5,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 94.5,
-      "prize": 0.0
-    },
-    {
-      "rank": 32,
+      "rank": 41,
       "name": "Edgar Moroz",
       "group": 94.5,
       "r32": 0.0,
@@ -1788,7 +1900,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 34,
+      "rank": 42,
       "name": "Edita Oršauskė",
       "group": 94.0,
       "r32": 0.0,
@@ -1802,8 +1914,8 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 34,
-      "name": "Gedas Girdžiūnas",
+      "rank": 42,
+      "name": "Simona Jociūtė",
       "group": 94.0,
       "r32": 0.0,
       "r16": 0.0,
@@ -1816,7 +1928,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 34,
+      "rank": 42,
       "name": "Renata Čižauskienė",
       "group": 94.0,
       "r32": 0.0,
@@ -1830,7 +1942,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 34,
+      "rank": 42,
       "name": "Evelina Tiščenkė",
       "group": 94.0,
       "r32": 0.0,
@@ -1844,7 +1956,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 38,
+      "rank": 46,
       "name": "Karolis Marcinkevičius",
       "group": 93.5,
       "r32": 0.0,
@@ -1858,7 +1970,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 38,
+      "rank": 46,
       "name": "Sigitas Šarauskis",
       "group": 93.5,
       "r32": 0.0,
@@ -1872,7 +1984,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 40,
+      "rank": 48,
       "name": "Slava Maltsev",
       "group": 93.0,
       "r32": 0.0,
@@ -1886,7 +1998,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 40,
+      "rank": 48,
       "name": "Paulius Bernotas",
       "group": 93.0,
       "r32": 0.0,
@@ -1900,8 +2012,8 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 40,
-      "name": "Simona Jociūtė",
+      "rank": 48,
+      "name": "Lukas Danielevičius",
       "group": 93.0,
       "r32": 0.0,
       "r16": 0.0,
@@ -1914,7 +2026,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 40,
+      "rank": 48,
       "name": "Raimondas Juška",
       "group": 93.0,
       "r32": 0.0,
@@ -1928,8 +2040,8 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 40,
-      "name": "Paolo Papiri",
+      "rank": 48,
+      "name": "Jonas Juška",
       "group": 93.0,
       "r32": 0.0,
       "r16": 0.0,
@@ -1942,7 +2054,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 40,
+      "rank": 48,
       "name": "Benediktas Babraitis",
       "group": 93.0,
       "r32": 0.0,
@@ -1956,21 +2068,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 46,
-      "name": "Rustam Roikov",
-      "group": 92.5,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 92.5,
-      "prize": 0.0
-    },
-    {
-      "rank": 46,
+      "rank": 54,
       "name": "Egidijus Navickas",
       "group": 92.5,
       "r32": 0.0,
@@ -1984,7 +2082,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 46,
+      "rank": 54,
       "name": "Yagub Alizada",
       "group": 92.5,
       "r32": 0.0,
@@ -1998,9 +2096,9 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 46,
-      "name": "Mindaugas Sipavičius",
-      "group": 92.5,
+      "rank": 56,
+      "name": "Saulius Lileikis",
+      "group": 92.0,
       "r32": 0.0,
       "r16": 0.0,
       "qf": 0.0,
@@ -2008,11 +2106,11 @@ const WC_DATA = {
       "final_pts": 0.0,
       "third": 0.0,
       "champ": 0.0,
-      "total": 92.5,
+      "total": 92.0,
       "prize": 0.0
     },
     {
-      "rank": 50,
+      "rank": 56,
       "name": "Todor Velikov",
       "group": 92.0,
       "r32": 0.0,
@@ -2026,7 +2124,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 50,
+      "rank": 56,
       "name": "Mindaugas Čižauskas",
       "group": 92.0,
       "r32": 0.0,
@@ -2040,7 +2138,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 50,
+      "rank": 56,
       "name": "Paulina Bungardė",
       "group": 92.0,
       "r32": 0.0,
@@ -2054,7 +2152,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 50,
+      "rank": 56,
       "name": "Benas&Šaras Oleknavičius",
       "group": 92.0,
       "r32": 0.0,
@@ -2068,7 +2166,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 50,
+      "rank": 56,
       "name": "Arnoldas Molis",
       "group": 92.0,
       "r32": 0.0,
@@ -2082,9 +2180,9 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 55,
-      "name": "Lukas Danielevičius",
-      "group": 91.5,
+      "rank": 62,
+      "name": "Benas VII",
+      "group": 91.0,
       "r32": 0.0,
       "r16": 0.0,
       "qf": 0.0,
@@ -2092,11 +2190,11 @@ const WC_DATA = {
       "final_pts": 0.0,
       "third": 0.0,
       "champ": 0.0,
-      "total": 91.5,
+      "total": 91.0,
       "prize": 0.0
     },
     {
-      "rank": 56,
+      "rank": 62,
       "name": "Kamran Mikayilov",
       "group": 91.0,
       "r32": 0.0,
@@ -2110,7 +2208,35 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 56,
+      "rank": 62,
+      "name": "Tomas Bruzga",
+      "group": 91.0,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 91.0,
+      "prize": 0.0
+    },
+    {
+      "rank": 62,
+      "name": "Elijus Benetis",
+      "group": 91.0,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 91.0,
+      "prize": 0.0
+    },
+    {
+      "rank": 62,
       "name": "Gintas Bungarda",
       "group": 91.0,
       "r32": 0.0,
@@ -2124,7 +2250,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 56,
+      "rank": 62,
       "name": "Tomas Šunskis",
       "group": 91.0,
       "r32": 0.0,
@@ -2138,8 +2264,8 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 59,
-      "name": "Tomas Bruzga",
+      "rank": 68,
+      "name": "Sofus Wolke",
       "group": 90.5,
       "r32": 0.0,
       "r16": 0.0,
@@ -2152,7 +2278,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 59,
+      "rank": 68,
       "name": "Gintautas Beržanskis",
       "group": 90.5,
       "r32": 0.0,
@@ -2166,21 +2292,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 61,
-      "name": "Elijus Benetis",
-      "group": 90.0,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 90.0,
-      "prize": 0.0
-    },
-    {
-      "rank": 61,
+      "rank": 70,
       "name": "Miglė Juškaitė",
       "group": 90.0,
       "r32": 0.0,
@@ -2194,7 +2306,35 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 63,
+      "rank": 71,
+      "name": "Dobilas III",
+      "group": 89.0,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 89.0,
+      "prize": 0.0
+    },
+    {
+      "rank": 71,
+      "name": "Benas Bruzga",
+      "group": 89.0,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 89.0,
+      "prize": 0.0
+    },
+    {
+      "rank": 71,
       "name": "Lukas Vaitukaitis",
       "group": 89.0,
       "r32": 0.0,
@@ -2208,7 +2348,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 63,
+      "rank": 71,
       "name": "Giedrius Stanulis",
       "group": 89.0,
       "r32": 0.0,
@@ -2222,7 +2362,21 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 63,
+      "rank": 71,
+      "name": "Joris Jalo",
+      "group": 89.0,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 89.0,
+      "prize": 0.0
+    },
+    {
+      "rank": 71,
       "name": "Jokūbas Kušleika",
       "group": 89.0,
       "r32": 0.0,
@@ -2236,21 +2390,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 66,
-      "name": "Benas VII",
-      "group": 88.0,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 88.0,
-      "prize": 0.0
-    },
-    {
-      "rank": 66,
+      "rank": 77,
       "name": "Justinas Novoruckis",
       "group": 88.0,
       "r32": 0.0,
@@ -2264,7 +2404,21 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 66,
+      "rank": 77,
+      "name": "Sampaio Carlos",
+      "group": 88.0,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 88.0,
+      "prize": 0.0
+    },
+    {
+      "rank": 77,
       "name": "Partrikas Oleknavičius",
       "group": 88.0,
       "r32": 0.0,
@@ -2278,7 +2432,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 66,
+      "rank": 77,
       "name": "Darius Jalo",
       "group": 88.0,
       "r32": 0.0,
@@ -2292,9 +2446,9 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 66,
-      "name": "Joris Jalo",
-      "group": 88.0,
+      "rank": 81,
+      "name": "Dainius Visackas",
+      "group": 87.5,
       "r32": 0.0,
       "r16": 0.0,
       "qf": 0.0,
@@ -2302,11 +2456,25 @@ const WC_DATA = {
       "final_pts": 0.0,
       "third": 0.0,
       "champ": 0.0,
-      "total": 88.0,
+      "total": 87.5,
       "prize": 0.0
     },
     {
-      "rank": 71,
+      "rank": 82,
+      "name": "Alius Antulis",
+      "group": 87.0,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 87.0,
+      "prize": 0.0
+    },
+    {
+      "rank": 82,
       "name": "Saulius Pipiras",
       "group": 87.0,
       "r32": 0.0,
@@ -2320,7 +2488,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 71,
+      "rank": 82,
       "name": "Nikolay Lenkov",
       "group": 87.0,
       "r32": 0.0,
@@ -2334,8 +2502,8 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 71,
-      "name": "Jonas Juška",
+      "rank": 82,
+      "name": "Alberto Canova",
       "group": 87.0,
       "r32": 0.0,
       "r16": 0.0,
@@ -2348,7 +2516,35 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 71,
+      "rank": 82,
+      "name": "N&A Pociai",
+      "group": 87.0,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 87.0,
+      "prize": 0.0
+    },
+    {
+      "rank": 82,
+      "name": "Simonas Sipavičius",
+      "group": 87.0,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 87.0,
+      "prize": 0.0
+    },
+    {
+      "rank": 82,
       "name": "Tihomir Chakarov",
       "group": 87.0,
       "r32": 0.0,
@@ -2362,7 +2558,21 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 71,
+      "rank": 82,
+      "name": "Danielius Pažusys",
+      "group": 87.0,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 87.0,
+      "prize": 0.0
+    },
+    {
+      "rank": 82,
       "name": "Mario Calvi",
       "group": 87.0,
       "r32": 0.0,
@@ -2376,35 +2586,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 76,
-      "name": "Dainius Visackas",
-      "group": 86.5,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 86.5,
-      "prize": 0.0
-    },
-    {
-      "rank": 77,
-      "name": "Saulius Lileikis",
-      "group": 86.0,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 86.0,
-      "prize": 0.0
-    },
-    {
-      "rank": 77,
+      "rank": 91,
       "name": "Giedrius Šadbaras",
       "group": 86.0,
       "r32": 0.0,
@@ -2418,7 +2600,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 77,
+      "rank": 91,
       "name": "Vytautas Podrezas",
       "group": 86.0,
       "r32": 0.0,
@@ -2432,93 +2614,9 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 77,
-      "name": "Simonas Sipavičius",
-      "group": 86.0,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 86.0,
-      "prize": 0.0
-    },
-    {
-      "rank": 77,
-      "name": "Danielius Pažusys",
-      "group": 86.0,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 86.0,
-      "prize": 0.0
-    },
-    {
-      "rank": 82,
-      "name": "Alberto Canova",
-      "group": 85.0,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 85.0,
-      "prize": 0.0
-    },
-    {
-      "rank": 82,
-      "name": "Donatas Keras",
-      "group": 85.0,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 85.0,
-      "prize": 0.0
-    },
-    {
-      "rank": 82,
-      "name": "Sampaio Carlos",
-      "group": 85.0,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 85.0,
-      "prize": 0.0
-    },
-    {
-      "rank": 85,
-      "name": "Sofus Wolke",
-      "group": 84.5,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 84.5,
-      "prize": 0.0
-    },
-    {
-      "rank": 86,
+      "rank": 93,
       "name": "Žygimantas Ryliškis",
-      "group": 84.0,
+      "group": 85.0,
       "r32": 0.0,
       "r16": 0.0,
       "qf": 0.0,
@@ -2526,11 +2624,11 @@ const WC_DATA = {
       "final_pts": 0.0,
       "third": 0.0,
       "champ": 0.0,
-      "total": 84.0,
+      "total": 85.0,
       "prize": 0.0
     },
     {
-      "rank": 86,
+      "rank": 94,
       "name": "Denis Kazarezov",
       "group": 84.0,
       "r32": 0.0,
@@ -2544,21 +2642,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 86,
-      "name": "Alius Antulis",
-      "group": 84.0,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 84.0,
-      "prize": 0.0
-    },
-    {
-      "rank": 86,
+      "rank": 94,
       "name": "Vytautas Gliaubicas",
       "group": 84.0,
       "r32": 0.0,
@@ -2572,8 +2656,8 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 86,
-      "name": "N&A Pociai",
+      "rank": 94,
+      "name": "Dovilė Smetonė",
       "group": 84.0,
       "r32": 0.0,
       "r16": 0.0,
@@ -2586,7 +2670,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 86,
+      "rank": 94,
       "name": "Jurga Šantaraitė",
       "group": 84.0,
       "r32": 0.0,
@@ -2600,36 +2684,36 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 92,
-      "name": "Dobilas III",
-      "group": 83.0,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 83.0,
-      "prize": 0.0
-    },
-    {
-      "rank": 92,
-      "name": "Benas Bruzga",
-      "group": 83.0,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 83.0,
-      "prize": 0.0
-    },
-    {
       "rank": 94,
-      "name": "Dovilė Smetonė",
+      "name": "Giuseppe Diana",
+      "group": 84.0,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 84.0,
+      "prize": 0.0
+    },
+    {
+      "rank": 99,
+      "name": "Thomas Wolke",
+      "group": 82.5,
+      "r32": 0.0,
+      "r16": 0.0,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final_pts": 0.0,
+      "third": 0.0,
+      "champ": 0.0,
+      "total": 82.5,
+      "prize": 0.0
+    },
+    {
+      "rank": 100,
+      "name": "Michele Sette",
       "group": 82.0,
       "r32": 0.0,
       "r16": 0.0,
@@ -2642,35 +2726,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 95,
-      "name": "Thomas Wolke",
-      "group": 81.5,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 81.5,
-      "prize": 0.0
-    },
-    {
-      "rank": 96,
-      "name": "Giuseppe Diana",
-      "group": 81.0,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 81.0,
-      "prize": 0.0
-    },
-    {
-      "rank": 96,
+      "rank": 101,
       "name": "Rimas Baubonis",
       "group": 81.0,
       "r32": 0.0,
@@ -2684,7 +2740,7 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 98,
+      "rank": 102,
       "name": "Alexey Nikitenko",
       "group": 80.0,
       "r32": 0.0,
@@ -2698,8 +2754,8 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 99,
-      "name": "Michele Sette",
+      "rank": 103,
+      "name": "Anton Panasenko",
       "group": 79.0,
       "r32": 0.0,
       "r16": 0.0,
@@ -2712,9 +2768,9 @@ const WC_DATA = {
       "prize": 0.0
     },
     {
-      "rank": 100,
-      "name": "Egidijus Mačiukas",
-      "group": 78.5,
+      "rank": 103,
+      "name": "Gintarė Paipulė",
+      "group": 79.0,
       "r32": 0.0,
       "r16": 0.0,
       "qf": 0.0,
@@ -2722,11 +2778,11 @@ const WC_DATA = {
       "final_pts": 0.0,
       "third": 0.0,
       "champ": 0.0,
-      "total": 78.5,
+      "total": 79.0,
       "prize": 0.0
     },
     {
-      "rank": 101,
+      "rank": 105,
       "name": "Deividas Jodenis",
       "group": 78.0,
       "r32": 0.0,
@@ -2737,62 +2793,6 @@ const WC_DATA = {
       "third": 0.0,
       "champ": 0.0,
       "total": 78.0,
-      "prize": 0.0
-    },
-    {
-      "rank": 102,
-      "name": "Simonas Anikinas",
-      "group": 77.0,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 77.0,
-      "prize": 0.0
-    },
-    {
-      "rank": 103,
-      "name": "Kristina I",
-      "group": 76.5,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 76.5,
-      "prize": 0.0
-    },
-    {
-      "rank": 104,
-      "name": "Anton Panasenko",
-      "group": 76.0,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 76.0,
-      "prize": 0.0
-    },
-    {
-      "rank": 105,
-      "name": "Gintarė Paipulė",
-      "group": 66.5,
-      "r32": 0.0,
-      "r16": 0.0,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final_pts": 0.0,
-      "third": 0.0,
-      "champ": 0.0,
-      "total": 66.5,
       "prize": 0.0
     }
   ],
@@ -2807,8 +2807,8 @@ const WC_DATA = {
       "oc2": "Norway",
       "oc3": "Ghana",
       "scoring_team": "Spain",
-      "total": 86.0,
-      "rank": 77
+      "total": 92.0,
+      "rank": 56
     },
     {
       "name": "Žygimantas Ryliškis",
@@ -2820,8 +2820,8 @@ const WC_DATA = {
       "oc2": "Sweden",
       "oc3": "Ghana",
       "scoring_team": "France",
-      "total": 84.0,
-      "rank": 86
+      "total": 85.0,
+      "rank": 93
     },
     {
       "name": "Slava Maltsev",
@@ -2834,7 +2834,7 @@ const WC_DATA = {
       "oc3": "Uzbekistan",
       "scoring_team": "France",
       "total": 93.0,
-      "rank": 40
+      "rank": 48
     },
     {
       "name": "Thomas Wolke",
@@ -2846,8 +2846,8 @@ const WC_DATA = {
       "oc2": "Norway",
       "oc3": "Uzbekistan",
       "scoring_team": "Brazil",
-      "total": 81.5,
-      "rank": 95
+      "total": 82.5,
+      "rank": 99
     },
     {
       "name": "Sofus Wolke",
@@ -2859,8 +2859,8 @@ const WC_DATA = {
       "oc2": "Norway",
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Argentina",
-      "total": 84.5,
-      "rank": 85
+      "total": 90.5,
+      "rank": 68
     },
     {
       "name": "Susie Wolke",
@@ -2872,8 +2872,8 @@ const WC_DATA = {
       "oc2": "Norway",
       "oc3": "Ghana",
       "scoring_team": "Spain",
-      "total": 96.0,
-      "rank": 22
+      "total": 115.0,
+      "rank": 1
     },
     {
       "name": "Denis Kazarezov",
@@ -2886,7 +2886,7 @@ const WC_DATA = {
       "oc3": "Uzbekistan",
       "scoring_team": "Spain",
       "total": 84.0,
-      "rank": 86
+      "rank": 94
     },
     {
       "name": "Sigitas Petraitis",
@@ -2898,8 +2898,8 @@ const WC_DATA = {
       "oc2": "Sweden",
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Brazil",
-      "total": 102.5,
-      "rank": 8
+      "total": 103.5,
+      "rank": 9
     },
     {
       "name": "Benas VII",
@@ -2911,8 +2911,8 @@ const WC_DATA = {
       "oc2": "Czechia",
       "oc3": "South Africa",
       "scoring_team": "France",
-      "total": 88.0,
-      "rank": 66
+      "total": 91.0,
+      "rank": 62
     },
     {
       "name": "Dobilas III",
@@ -2924,8 +2924,8 @@ const WC_DATA = {
       "oc2": "Canada",
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "England",
-      "total": 83.0,
-      "rank": 92
+      "total": 89.0,
+      "rank": 71
     },
     {
       "name": "Kristina I",
@@ -2937,8 +2937,8 @@ const WC_DATA = {
       "oc2": "Paraguay",
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Netherlands",
-      "total": 76.5,
-      "rank": 103
+      "total": 97.0,
+      "rank": 25
     },
     {
       "name": "Alius Antulis",
@@ -2950,8 +2950,8 @@ const WC_DATA = {
       "oc2": "Norway",
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Spain",
-      "total": 84.0,
-      "rank": 86
+      "total": 87.0,
+      "rank": 82
     },
     {
       "name": "Todor Velikov",
@@ -2964,7 +2964,7 @@ const WC_DATA = {
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Spain",
       "total": 92.0,
-      "rank": 50
+      "rank": 56
     },
     {
       "name": "Karolis Marcinkevičius",
@@ -2977,7 +2977,7 @@ const WC_DATA = {
       "oc3": "New Zealand",
       "scoring_team": "Argentina",
       "total": 93.5,
-      "rank": 38
+      "rank": 46
     },
     {
       "name": "Donatas Pocius",
@@ -2990,7 +2990,7 @@ const WC_DATA = {
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Spain",
       "total": 95.0,
-      "rank": 28
+      "rank": 36
     },
     {
       "name": "Kamran Mikayilov",
@@ -3003,7 +3003,7 @@ const WC_DATA = {
       "oc3": "Ghana",
       "scoring_team": "Spain",
       "total": 91.0,
-      "rank": 56
+      "rank": 62
     },
     {
       "name": "Alexey Nikitenko",
@@ -3016,7 +3016,7 @@ const WC_DATA = {
       "oc3": "Uzbekistan",
       "scoring_team": "Spain",
       "total": 80.0,
-      "rank": 98
+      "rank": 102
     },
     {
       "name": "Edita Oršauskė",
@@ -3029,7 +3029,7 @@ const WC_DATA = {
       "oc3": "Saudi Arabia",
       "scoring_team": "Spain",
       "total": 94.0,
-      "rank": 34
+      "rank": 42
     },
     {
       "name": "Saulius Pipiras",
@@ -3042,7 +3042,7 @@ const WC_DATA = {
       "oc3": "Ghana",
       "scoring_team": "Spain",
       "total": 87.0,
-      "rank": 71
+      "rank": 82
     },
     {
       "name": "Vytautas Gliaubicas",
@@ -3055,7 +3055,7 @@ const WC_DATA = {
       "oc3": "Uzbekistan",
       "scoring_team": "Spain",
       "total": 84.0,
-      "rank": 86
+      "rank": 94
     },
     {
       "name": "Benas Bruzga",
@@ -3067,8 +3067,8 @@ const WC_DATA = {
       "oc2": "Ivory Coast",
       "oc3": "Ghana",
       "scoring_team": "France",
-      "total": 83.0,
-      "rank": 92
+      "total": 89.0,
+      "rank": 71
     },
     {
       "name": "Tomas Bruzga",
@@ -3080,8 +3080,8 @@ const WC_DATA = {
       "oc2": "Canada",
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Germany",
-      "total": 90.5,
-      "rank": 59
+      "total": 91.0,
+      "rank": 62
     },
     {
       "name": "Martynas Bruzga",
@@ -3094,7 +3094,7 @@ const WC_DATA = {
       "oc3": "South Africa",
       "scoring_team": "Spain",
       "total": 98.0,
-      "rank": 18
+      "rank": 24
     },
     {
       "name": "Gedas Girdžiūnas",
@@ -3106,8 +3106,8 @@ const WC_DATA = {
       "oc2": "Norway",
       "oc3": "Uzbekistan",
       "scoring_team": "France",
-      "total": 94.0,
-      "rank": 34
+      "total": 95.0,
+      "rank": 36
     },
     {
       "name": "Paulius Bernotas",
@@ -3120,7 +3120,7 @@ const WC_DATA = {
       "oc3": "Ghana",
       "scoring_team": "Spain",
       "total": 93.0,
-      "rank": 40
+      "rank": 48
     },
     {
       "name": "Egidijus Mačiukas",
@@ -3132,8 +3132,8 @@ const WC_DATA = {
       "oc2": "Czechia",
       "oc3": "Ghana",
       "scoring_team": "Netherlands",
-      "total": 78.5,
-      "rank": 100
+      "total": 99.0,
+      "rank": 19
     },
     {
       "name": "Algirdas Čižauskas",
@@ -3146,7 +3146,7 @@ const WC_DATA = {
       "oc3": "South Africa",
       "scoring_team": "Brazil",
       "total": 104.5,
-      "rank": 6
+      "rank": 7
     },
     {
       "name": "Virginija Čižauskienė",
@@ -3158,8 +3158,8 @@ const WC_DATA = {
       "oc2": "Scotland",
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Portugal",
-      "total": 97.0,
-      "rank": 20
+      "total": 103.0,
+      "rank": 10
     },
     {
       "name": "Giedrius Šadbaras",
@@ -3172,7 +3172,7 @@ const WC_DATA = {
       "oc3": "Ghana",
       "scoring_team": "Spain",
       "total": 86.0,
-      "rank": 77
+      "rank": 91
     },
     {
       "name": "Eugenijus Petrošius",
@@ -3184,7 +3184,7 @@ const WC_DATA = {
       "oc2": "Australia",
       "oc3": "DR Congo",
       "scoring_team": "Germany",
-      "total": 94.5,
+      "total": 96.0,
       "rank": 32
     },
     {
@@ -3198,7 +3198,7 @@ const WC_DATA = {
       "oc3": "Ghana",
       "scoring_team": "Spain",
       "total": 101.0,
-      "rank": 12
+      "rank": 15
     },
     {
       "name": "Juozas Žimkus Jr",
@@ -3211,7 +3211,7 @@ const WC_DATA = {
       "oc3": "DR Congo",
       "scoring_team": "Spain",
       "total": 96.0,
-      "rank": 22
+      "rank": 32
     },
     {
       "name": "Lukas Danielevičius",
@@ -3223,8 +3223,8 @@ const WC_DATA = {
       "oc2": "Norway",
       "oc3": "Saudi Arabia",
       "scoring_team": "Germany",
-      "total": 91.5,
-      "rank": 55
+      "total": 93.0,
+      "rank": 48
     },
     {
       "name": "Simas Baubonis",
@@ -3237,7 +3237,7 @@ const WC_DATA = {
       "oc3": "Ghana",
       "scoring_team": "Brazil",
       "total": 112.5,
-      "rank": 1
+      "rank": 2
     },
     {
       "name": "Dainius Visackas",
@@ -3249,8 +3249,8 @@ const WC_DATA = {
       "oc2": "Algeria",
       "oc3": "DR Congo",
       "scoring_team": "Brazil",
-      "total": 86.5,
-      "rank": 76
+      "total": 87.5,
+      "rank": 81
     },
     {
       "name": "Ivan Manev",
@@ -3262,8 +3262,8 @@ const WC_DATA = {
       "oc2": "Sweden",
       "oc3": "Ghana",
       "scoring_team": "Spain",
-      "total": 96.0,
-      "rank": 22
+      "total": 97.0,
+      "rank": 25
     },
     {
       "name": "Rustam Roikov",
@@ -3275,8 +3275,8 @@ const WC_DATA = {
       "oc2": "Sweden",
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Germany",
-      "total": 92.5,
-      "rank": 46
+      "total": 97.0,
+      "rank": 25
     },
     {
       "name": "Zaur Yusubov",
@@ -3289,7 +3289,7 @@ const WC_DATA = {
       "oc3": "Ghana",
       "scoring_team": "France",
       "total": 108.0,
-      "rank": 4
+      "rank": 5
     },
     {
       "name": "Nikolay Lenkov",
@@ -3302,7 +3302,7 @@ const WC_DATA = {
       "oc3": "Uzbekistan",
       "scoring_team": "Spain",
       "total": 87.0,
-      "rank": 71
+      "rank": 82
     },
     {
       "name": "Simona Jociūtė",
@@ -3314,8 +3314,8 @@ const WC_DATA = {
       "oc2": "Norway",
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "France",
-      "total": 93.0,
-      "rank": 40
+      "total": 94.0,
+      "rank": 42
     },
     {
       "name": "Elijus Benetis",
@@ -3327,8 +3327,8 @@ const WC_DATA = {
       "oc2": "Norway",
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Spain",
-      "total": 90.0,
-      "rank": 61
+      "total": 91.0,
+      "rank": 62
     },
     {
       "name": "Anton Panasenko",
@@ -3340,8 +3340,8 @@ const WC_DATA = {
       "oc2": "Norway",
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "England",
-      "total": 76.0,
-      "rank": 104
+      "total": 79.0,
+      "rank": 103
     },
     {
       "name": "Justinas Novoruckis",
@@ -3354,7 +3354,7 @@ const WC_DATA = {
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Spain",
       "total": 88.0,
-      "rank": 66
+      "rank": 77
     },
     {
       "name": "Egidijus Navickas",
@@ -3367,7 +3367,7 @@ const WC_DATA = {
       "oc3": "Jordan",
       "scoring_team": "Brazil",
       "total": 92.5,
-      "rank": 46
+      "rank": 54
     },
     {
       "name": "Deividas Jodenis",
@@ -3380,7 +3380,7 @@ const WC_DATA = {
       "oc3": "Uzbekistan",
       "scoring_team": "Spain",
       "total": 78.0,
-      "rank": 101
+      "rank": 105
     },
     {
       "name": "Titas Jodenis",
@@ -3392,8 +3392,8 @@ const WC_DATA = {
       "oc2": "Norway",
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Germany",
-      "total": 108.5,
-      "rank": 2
+      "total": 109.0,
+      "rank": 3
     },
     {
       "name": "Yagub Alizada",
@@ -3406,7 +3406,7 @@ const WC_DATA = {
       "oc3": "Ghana",
       "scoring_team": "Brazil",
       "total": 92.5,
-      "rank": 46
+      "rank": 54
     },
     {
       "name": "Edgar Moroz",
@@ -3419,7 +3419,7 @@ const WC_DATA = {
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Brazil",
       "total": 94.5,
-      "rank": 32
+      "rank": 41
     },
     {
       "name": "Alberto Canova",
@@ -3431,7 +3431,7 @@ const WC_DATA = {
       "oc2": "Australia",
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Spain",
-      "total": 85.0,
+      "total": 87.0,
       "rank": 82
     },
     {
@@ -3445,7 +3445,7 @@ const WC_DATA = {
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Brazil",
       "total": 99.5,
-      "rank": 14
+      "rank": 17
     },
     {
       "name": "Vytautas Podrezas",
@@ -3458,7 +3458,7 @@ const WC_DATA = {
       "oc3": "Ghana",
       "scoring_team": "Portugal",
       "total": 86.0,
-      "rank": 77
+      "rank": 91
     },
     {
       "name": "Sergey Zhaltuchin",
@@ -3470,8 +3470,8 @@ const WC_DATA = {
       "oc2": "Australia",
       "oc3": "DR Congo",
       "scoring_team": "France",
-      "total": 102.0,
-      "rank": 9
+      "total": 103.0,
+      "rank": 10
     },
     {
       "name": "Mindaugas Čižauskas",
@@ -3484,7 +3484,7 @@ const WC_DATA = {
       "oc3": "New Zealand",
       "scoring_team": "Spain",
       "total": 92.0,
-      "rank": 50
+      "rank": 56
     },
     {
       "name": "Renata Čižauskienė",
@@ -3497,7 +3497,7 @@ const WC_DATA = {
       "oc3": "Ghana",
       "scoring_team": "France",
       "total": 94.0,
-      "rank": 34
+      "rank": 42
     },
     {
       "name": "Aurimas Šumbrauskis",
@@ -3510,7 +3510,7 @@ const WC_DATA = {
       "oc3": "Ghana",
       "scoring_team": "Spain",
       "total": 97.0,
-      "rank": 20
+      "rank": 25
     },
     {
       "name": "Dovilė Smetonė",
@@ -3522,7 +3522,7 @@ const WC_DATA = {
       "oc2": "Sweden",
       "oc3": "New Zealand",
       "scoring_team": "Spain",
-      "total": 82.0,
+      "total": 84.0,
       "rank": 94
     },
     {
@@ -3536,7 +3536,7 @@ const WC_DATA = {
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Brazil",
       "total": 106.5,
-      "rank": 5
+      "rank": 6
     },
     {
       "name": "N&A Pociai",
@@ -3548,8 +3548,8 @@ const WC_DATA = {
       "oc2": "Canada",
       "oc3": "Ghana",
       "scoring_team": "Spain",
-      "total": 84.0,
-      "rank": 86
+      "total": 87.0,
+      "rank": 82
     },
     {
       "name": "Donatas Celesius",
@@ -3562,7 +3562,7 @@ const WC_DATA = {
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Brazil",
       "total": 108.5,
-      "rank": 2
+      "rank": 4
     },
     {
       "name": "Evelina Tiščenkė",
@@ -3575,7 +3575,7 @@ const WC_DATA = {
       "oc3": "Qatar",
       "scoring_team": "France",
       "total": 94.0,
-      "rank": 34
+      "rank": 42
     },
     {
       "name": "Gianmarco Monti",
@@ -3587,8 +3587,8 @@ const WC_DATA = {
       "oc2": "Norway",
       "oc3": "Ghana",
       "scoring_team": "France",
-      "total": 98.0,
-      "rank": 18
+      "total": 99.0,
+      "rank": 19
     },
     {
       "name": "Lukas Vaitukaitis",
@@ -3601,7 +3601,7 @@ const WC_DATA = {
       "oc3": "Uzbekistan",
       "scoring_team": "France",
       "total": 89.0,
-      "rank": 63
+      "rank": 71
     },
     {
       "name": "Mindaugas Sipavičius",
@@ -3613,8 +3613,8 @@ const WC_DATA = {
       "oc2": "Norway",
       "oc3": "Cape Verde",
       "scoring_team": "Brazil",
-      "total": 92.5,
-      "rank": 46
+      "total": 98.5,
+      "rank": 22
     },
     {
       "name": "Simonas Sipavičius",
@@ -3626,8 +3626,8 @@ const WC_DATA = {
       "oc2": "Norway",
       "oc3": "Uzbekistan",
       "scoring_team": "Spain",
-      "total": 86.0,
-      "rank": 77
+      "total": 87.0,
+      "rank": 82
     },
     {
       "name": "Rolandas Urbelis",
@@ -3639,7 +3639,7 @@ const WC_DATA = {
       "oc2": "Scotland",
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Brazil",
-      "total": 98.5,
+      "total": 99.5,
       "rank": 17
     },
     {
@@ -3653,7 +3653,7 @@ const WC_DATA = {
       "oc3": "Ghana",
       "scoring_team": "Spain",
       "total": 95.0,
-      "rank": 28
+      "rank": 36
     },
     {
       "name": "Artem Lavrov",
@@ -3666,7 +3666,7 @@ const WC_DATA = {
       "oc3": "Uzbekistan",
       "scoring_team": "France",
       "total": 102.0,
-      "rank": 9
+      "rank": 14
     },
     {
       "name": "Donatas Keras",
@@ -3678,8 +3678,8 @@ const WC_DATA = {
       "oc2": "Norway",
       "oc3": "DR Congo",
       "scoring_team": "Spain",
-      "total": 85.0,
-      "rank": 82
+      "total": 97.0,
+      "rank": 25
     },
     {
       "name": "Donatas Bakėjus",
@@ -3691,8 +3691,8 @@ const WC_DATA = {
       "oc2": "Sweden",
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Spain",
-      "total": 96.0,
-      "rank": 22
+      "total": 97.0,
+      "rank": 25
     },
     {
       "name": "Simonas Anikinas",
@@ -3704,8 +3704,8 @@ const WC_DATA = {
       "oc2": "Sweden",
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "France",
-      "total": 77.0,
-      "rank": 102
+      "total": 96.0,
+      "rank": 32
     },
     {
       "name": "Raimondas Juška",
@@ -3718,7 +3718,7 @@ const WC_DATA = {
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "England",
       "total": 93.0,
-      "rank": 40
+      "rank": 48
     },
     {
       "name": "Jonas Juška",
@@ -3730,8 +3730,8 @@ const WC_DATA = {
       "oc2": "Ivory Coast",
       "oc3": "DR Congo",
       "scoring_team": "Spain",
-      "total": 87.0,
-      "rank": 71
+      "total": 93.0,
+      "rank": 48
     },
     {
       "name": "Miglė Juškaitė",
@@ -3744,7 +3744,7 @@ const WC_DATA = {
       "oc3": "Ghana",
       "scoring_team": "France",
       "total": 90.0,
-      "rank": 61
+      "rank": 70
     },
     {
       "name": "Tihomir Chakarov",
@@ -3757,7 +3757,7 @@ const WC_DATA = {
       "oc3": "South Africa",
       "scoring_team": "Spain",
       "total": 87.0,
-      "rank": 71
+      "rank": 82
     },
     {
       "name": "Giedrius Stanulis",
@@ -3770,7 +3770,7 @@ const WC_DATA = {
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Spain",
       "total": 89.0,
-      "rank": 63
+      "rank": 71
     },
     {
       "name": "Sampaio Carlos",
@@ -3782,8 +3782,8 @@ const WC_DATA = {
       "oc2": "Canada",
       "oc3": "Ghana",
       "scoring_team": "France",
-      "total": 85.0,
-      "rank": 82
+      "total": 88.0,
+      "rank": 77
     },
     {
       "name": "Aurimas Oleknavičius",
@@ -3796,7 +3796,7 @@ const WC_DATA = {
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Spain",
       "total": 95.0,
-      "rank": 28
+      "rank": 36
     },
     {
       "name": "Partrikas Oleknavičius",
@@ -3809,7 +3809,7 @@ const WC_DATA = {
       "oc3": "DR Congo",
       "scoring_team": "France",
       "total": 88.0,
-      "rank": 66
+      "rank": 77
     },
     {
       "name": "Jurga Šantaraitė",
@@ -3822,7 +3822,7 @@ const WC_DATA = {
       "oc3": "New Zealand",
       "scoring_team": "England",
       "total": 84.0,
-      "rank": 86
+      "rank": 94
     },
     {
       "name": "Giuseppe Diana",
@@ -3834,8 +3834,8 @@ const WC_DATA = {
       "oc2": "Norway",
       "oc3": "South Africa",
       "scoring_team": "Portugal",
-      "total": 81.0,
-      "rank": 96
+      "total": 84.0,
+      "rank": 94
     },
     {
       "name": "Danielius Pažusys",
@@ -3847,8 +3847,8 @@ const WC_DATA = {
       "oc2": "Australia",
       "oc3": "Qatar",
       "scoring_team": "Spain",
-      "total": 86.0,
-      "rank": 77
+      "total": 87.0,
+      "rank": 82
     },
     {
       "name": "Michele Sette",
@@ -3860,8 +3860,8 @@ const WC_DATA = {
       "oc2": "Czechia",
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Spain",
-      "total": 79.0,
-      "rank": 99
+      "total": 82.0,
+      "rank": 100
     },
     {
       "name": "Mario Calvi",
@@ -3874,7 +3874,7 @@ const WC_DATA = {
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Spain",
       "total": 87.0,
-      "rank": 71
+      "rank": 82
     },
     {
       "name": "Davide Speranza",
@@ -3887,7 +3887,7 @@ const WC_DATA = {
       "oc3": "Qatar",
       "scoring_team": "France",
       "total": 103.0,
-      "rank": 7
+      "rank": 10
     },
     {
       "name": "Nadia Mercurio",
@@ -3899,8 +3899,8 @@ const WC_DATA = {
       "oc2": "Norway",
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Brazil",
-      "total": 101.5,
-      "rank": 11
+      "total": 104.5,
+      "rank": 7
     },
     {
       "name": "Paolo Papiri",
@@ -3912,8 +3912,8 @@ const WC_DATA = {
       "oc2": "Sweden",
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Spain",
-      "total": 93.0,
-      "rank": 40
+      "total": 97.0,
+      "rank": 25
     },
     {
       "name": "Gintas Bungarda",
@@ -3926,7 +3926,7 @@ const WC_DATA = {
       "oc3": "Cape Verde",
       "scoring_team": "France",
       "total": 91.0,
-      "rank": 56
+      "rank": 62
     },
     {
       "name": "Paulina Bungardė",
@@ -3939,7 +3939,7 @@ const WC_DATA = {
       "oc3": "Ghana",
       "scoring_team": "Spain",
       "total": 92.0,
-      "rank": 50
+      "rank": 56
     },
     {
       "name": "Gintas Bungarda 2",
@@ -3952,7 +3952,7 @@ const WC_DATA = {
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "France",
       "total": 96.0,
-      "rank": 22
+      "rank": 32
     },
     {
       "name": "Tomas Šunskis",
@@ -3965,7 +3965,7 @@ const WC_DATA = {
       "oc3": "Cape Verde",
       "scoring_team": "Spain",
       "total": 91.0,
-      "rank": 56
+      "rank": 62
     },
     {
       "name": "Gintautas Beržanskis",
@@ -3978,7 +3978,7 @@ const WC_DATA = {
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Brazil",
       "total": 90.5,
-      "rank": 59
+      "rank": 68
     },
     {
       "name": "Vaidas Pažusys",
@@ -3991,7 +3991,7 @@ const WC_DATA = {
       "oc3": "Ghana",
       "scoring_team": "Spain",
       "total": 101.0,
-      "rank": 12
+      "rank": 15
     },
     {
       "name": "Deividas Jančius",
@@ -4004,7 +4004,7 @@ const WC_DATA = {
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Spain",
       "total": 99.0,
-      "rank": 16
+      "rank": 19
     },
     {
       "name": "Ernesta Čebienė",
@@ -4017,7 +4017,7 @@ const WC_DATA = {
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "France",
       "total": 95.0,
-      "rank": 28
+      "rank": 36
     },
     {
       "name": "Darius Jalo",
@@ -4030,7 +4030,7 @@ const WC_DATA = {
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Spain",
       "total": 88.0,
-      "rank": 66
+      "rank": 77
     },
     {
       "name": "Pijus Jalo",
@@ -4042,8 +4042,8 @@ const WC_DATA = {
       "oc2": "Egypt",
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Brazil",
-      "total": 99.5,
-      "rank": 14
+      "total": 102.5,
+      "rank": 13
     },
     {
       "name": "Joris Jalo",
@@ -4055,8 +4055,8 @@ const WC_DATA = {
       "oc2": "Egypt",
       "oc3": "Uzbekistan",
       "scoring_team": "Spain",
-      "total": 88.0,
-      "rank": 66
+      "total": 89.0,
+      "rank": 71
     },
     {
       "name": "Audi club",
@@ -4068,8 +4068,8 @@ const WC_DATA = {
       "oc2": "Egypt",
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Argentina",
-      "total": 95.5,
-      "rank": 27
+      "total": 98.5,
+      "rank": 22
     },
     {
       "name": "Benediktas Babraitis",
@@ -4082,7 +4082,7 @@ const WC_DATA = {
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "Spain",
       "total": 93.0,
-      "rank": 40
+      "rank": 48
     },
     {
       "name": "Rimas Baubonis",
@@ -4095,7 +4095,7 @@ const WC_DATA = {
       "oc3": "Ghana",
       "scoring_team": "Spain",
       "total": 81.0,
-      "rank": 96
+      "rank": 101
     },
     {
       "name": "Sigitas Šarauskis",
@@ -4108,7 +4108,7 @@ const WC_DATA = {
       "oc3": "Qatar",
       "scoring_team": "Brazil",
       "total": 93.5,
-      "rank": 38
+      "rank": 46
     },
     {
       "name": "Jokūbas Kušleika",
@@ -4121,7 +4121,7 @@ const WC_DATA = {
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "France",
       "total": 89.0,
-      "rank": 63
+      "rank": 71
     },
     {
       "name": "Benas&Šaras Oleknavičius",
@@ -4134,7 +4134,7 @@ const WC_DATA = {
       "oc3": "Ghana",
       "scoring_team": "France",
       "total": 92.0,
-      "rank": 50
+      "rank": 56
     },
     {
       "name": "Gintarė Paipulė",
@@ -4146,8 +4146,8 @@ const WC_DATA = {
       "oc2": "Norway",
       "oc3": "Iraq",
       "scoring_team": "Germany",
-      "total": 66.5,
-      "rank": 105
+      "total": 79.0,
+      "rank": 103
     },
     {
       "name": "Arnoldas Molis",
@@ -4160,10 +4160,10 @@ const WC_DATA = {
       "oc3": "Bosnia & Herzegovina",
       "scoring_team": "France",
       "total": 92.0,
-      "rank": 50
+      "rank": 56
     }
   ],
-  "last_updated": "2026-06-26 04:44",
+  "last_updated": "2026-06-26 06:09",
   "total_pot": 3150,
   "tournament_name": "FIFA World Cup 2026"
 };
