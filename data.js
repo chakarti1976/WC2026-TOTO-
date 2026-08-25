@@ -4163,7 +4163,7 @@ const WC_DATA = {
       "rank": 37
     }
   ],
-  "last_updated": "2026-08-25 16:37",
+  "last_updated": "2026-08-25 18:27",
   "total_pot": 3150,
   "tournament_name": "FIFA World Cup 2026"
 };
